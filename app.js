@@ -9,28 +9,8 @@ const passError = document.getElementById('passError')
 const checkboxError = document.getElementById('policy')
 
 button.addEventListener('click', ()=>{
-    if(firstName.value ==``){
-        firstNameError.innerHTML = `Please fill out this field`
-    }
-    else{
-        firstNameError.innerHTML = ``
-    }
-    if(lastName.value == ``){
-        lastNameError.innerHTML = `Please fill out this field`
-    }
-    else{
-        lastNameError.innerHTML = ``
-    }
-    if(password.value == ``){
-        passError.innerHTML = `Please fill out this field`
-    }
-    else{
-        passError.innerHTML = ``
-    }
-    if(!checkbox.checked){
-        checkboxError.innerHTML = 'Please accept privacy policy'
-    }
-    else{
-        checkboxError.innerHTML =``
-    }
+    firstName.value ==`` ? firstNameError.innerHTML = `Please fill out this field` : firstNameError.innerHTML = ``
+    lastName.value == '' ? lastNameError.innerHTML = `Please fill out this field` : lastNameError.innerHTML = ``
+    password.value == "" ? passError.innerHTML = `Please fill out this field` :  passError.innerHTML = ``
+    !checkbox.checked ? checkboxError.innerHTML = 'Please accept privacy policy' : checkboxError.innerHTML =``
 })
