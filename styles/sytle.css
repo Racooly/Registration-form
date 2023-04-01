@@ -82,3 +82,21 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }/*# sourceMappingURL=sytle.css.map */
+.passInp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.passInp svg{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.passInp #eyeOpen{
+  display: inline;
+}
+.passInp #eyeClosed{
+  display: none;
+}
